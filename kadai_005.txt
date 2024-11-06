@@ -1,59 +1,51 @@
-KAZUM1MAC:git_tutorial kazunorifujimoto$ cd /Users/kazunorifujimoto/Desktop/kadai_1105
-KAZUM1MAC:kadai_1105 kazunorifujimoto$ mkdir git_challenge
-KAZUM1MAC:kadai_1105 kazunorifujimoto$ cd git_challenge
-KAZUM1MAC:git_challenge kazunorifujimoto$ git add hello_world.text
-fatal: not a git repository (or any of the parent directories): .git
-KAZUM1MAC:git_challenge kazunorifujimoto$ git add hello_world.txt
-fatal: not a git repository (or any of the parent directories): .git
-KAZUM1MAC:git_challenge kazunorifujimoto$ git add /Users/kazunorifujimoto/Desktop/kadai_1105/git_challenge/hello_world.txt
-fatal: not a git repository (or any of the parent directories): .git
-KAZUM1MAC:git_challenge kazunorifujimoto$ git add hello_world.txt
-fatal: not a git repository (or any of the parent directories): .git
+KAZUM1MAC:~ kazunorifujimoto$ cd /Users/kazunorifujimoto/Desktop/kadai_1107
+KAZUM1MAC:kadai_1107 kazunorifujimoto$ git mkdir git_challenge
+git: 'mkdir' is not a git command. See 'git --help'.
+KAZUM1MAC:kadai_1107 kazunorifujimoto$ mkdir git_challenge
+KAZUM1MAC:kadai_1107 kazunorifujimoto$ cd git_challenge
 KAZUM1MAC:git_challenge kazunorifujimoto$ git init
-Initialized empty Git repository in /Users/kazunorifujimoto/Desktop/kadai_1105/git_challenge/.git/
+Initialized empty Git repository in /Users/kazunorifujimoto/Desktop/kadai_1107/git_challenge/.git/
 KAZUM1MAC:git_challenge kazunorifujimoto$ git add hello_world.txt
-KAZUM1MAC:git_challenge kazunorifujimoto$ git commit -m "練習のコミット"
-[main (root-commit) 0154daf] 練習のコミット
- 1 file changed, 0 insertions(+), 0 deletions(-)
+KAZUM1MAC:git_challenge kazunorifujimoto$ git commit -m "helloworldのコミット"
+[main (root-commit) 541b573] helloworldのコミット
+ 1 file changed, 1 insertion(+)
  create mode 100644 hello_world.txt
-KAZUM1MAC:git_challenge kazunorifujimoto$ git staus
-git: 'staus' is not a git command. See 'git --help'.
+KAZUM1MAC:git_challenge kazunorifujimoto$  git status
+On branch main
+nothing to commit, working tree clean
+KAZUM1MAC:git_challenge kazunorifujimoto$ git log
+commit 541b5737265c3d12edad250c82defc95b4eadb3d (HEAD -> main)
+Author: wecandoitjapan <kazunori.fujimoto.1981@gmail.com>
+Date:   Thu Nov 7 08:17:51 2024 +0900
+
+    helloworldのコミット
+KAZUM1MAC:git_challenge kazunorifujimoto$ git add hello_world.txt
+KAZUM1MAC:git_challenge kazunorifujimoto$ git commmit -m "こんちは、世界！２回目のコミット"
+git: 'commmit' is not a git command. See 'git --help'.
 
 The most similar command is
-        status
-KAZUM1MAC:git_challenge kazunorifujimoto$ git status
-On branch main
-nothing to commit, working tree clean
-KAZUM1MAC:git_challenge kazunorifujimoto$ git add hello_world.txt
-KAZUM1MAC:git_challenge kazunorifujimoto$ git commit -m"hello worldwo"
-[main 0ba010c] hello worldwo
- 1 file changed, 1 insertion(+)
-KAZUM1MAC:git_challenge kazunorifujimoto$ git status
-On branch main
-nothing to commit, working tree clean
-KAZUM1MAC:git_challenge kazunorifujimoto$ git add hello_world.txt
-KAZUM1MAC:git_challenge kazunorifujimoto$ git commit -m "２回目のコミット "
-[main 245bde3] ２回目のコミット
+        commit
+KAZUM1MAC:git_challenge kazunorifujimoto$ git commit -m "こんにちは、世界！２回目のコミット"
+[main 37fa823] こんにちは、世界！２回目のコミット
  1 file changed, 2 insertions(+), 1 deletion(-)
 KAZUM1MAC:git_challenge kazunorifujimoto$ git status
 On branch main
 nothing to commit, working tree clean
-KAZUM1MAC:git_challenge kazunorifujimoto$ git diff /Users/kazunorifujimoto/Desktop/kadai_1105/git_challenge/hello_world.txt
-KAZUM1MAC:git_challenge kazunorifujimoto$ git log /Users/kazunorifujimoto/Desktop/kadai_1105/git_challenge/hello_world.txt
-commit 245bde3895b7cbe4cef153fbea06716977822897 (HEAD -> main)
+KAZUM1MAC:git_challenge kazunorifujimoto$ git log
+commit 37fa82324e24bde61b737932af6017e7bc0f2bd9 (HEAD -> main)
 Author: wecandoitjapan <kazunori.fujimoto.1981@gmail.com>
-Date:   Tue Nov 5 21:49:43 2024 +0900
+Date:   Thu Nov 7 08:23:05 2024 +0900
 
-    ２回目のコミット
+    こんにちは、世界！２回目のコミット
 
-commit 0ba010c04232b00a04923feeca3129ec802d40b9
+commit 541b5737265c3d12edad250c82defc95b4eadb3d
 Author: wecandoitjapan <kazunori.fujimoto.1981@gmail.com>
-Date:   Tue Nov 5 21:47:04 2024 +0900
+Date:   Thu Nov 7 08:17:51 2024 +0900
 
-    hello worldwo
-
-commit 0154daf23a7cf3f25185ea4c11a752c7547eb3d7
-Author: wecandoitjapan <kazunori.fujimoto.1981@gmail.com>
-Date:   Tue Nov 5 21:43:40 2024 +0900
-
-    練習のコミット
+    helloworldのコミット
+KAZUM1MAC:git_challenge kazunorifujimoto$ git log --online
+fatal: unrecognized argument: --online
+KAZUM1MAC:git_challenge kazunorifujimoto$ git log --oneline
+37fa823 (HEAD -> main) こんにちは、世界！２回目のコミット
+541b573 helloworldのコミット
+KAZUM1MAC:git_challenge kazunorifujimoto$ 
